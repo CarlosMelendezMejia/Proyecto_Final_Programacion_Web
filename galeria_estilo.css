@@ -39,7 +39,9 @@ header{
 
 /*Imagen de fondo y tamaño del main de la pagina*/
 main{
-    background-image:url("imagenes/background_madera_azul.png");
+    /*background-image:url("imagenes/background_madera_azul.png");
+    Github pages no detecta la imagen del background*/
+    background-color: #173b6d;
     height: 2200px;
 }
 
