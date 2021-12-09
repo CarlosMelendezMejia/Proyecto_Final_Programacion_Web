@@ -1,0 +1,232 @@
+/*Resetear el margin y el padding del HTML a cero*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*Definición de fuente de texto*/
+@font-face {
+    font-family:'Cafe';
+    src: url('fuentes/Louis George Cafe.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*Definición de fuente de texto*/
+@font-face {
+    font-family:'Social Symbol';
+    src: url('fuentes/Social_Shapes.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*Estilo neutral para los hipervinculos*/
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+
+/*Estilo neutral para las listas*/
+ul{
+    list-style-type:none;
+}
+
+/*Color de fondo y tamaño del encabezado de la pagina*/
+header{
+    background-color: #F2F2F2;
+    height:250px;
+}
+
+/*Imagen de fondo y tamaño del main de la pagina*/
+main{
+    background-image:url("imagenes/background_madera_azul.png");
+    height: 3000px;
+}
+
+/*Color de fondo y tamaño del pie de la pagina*/
+footer{
+    background-color: #E3007A;
+    height: 215px;
+}
+
+/*Definicion del margen del encabezado y el main*/
+header, main{
+    padding: 40px 90px 40px 90px;
+}
+
+/*Definicion del margen del pie de pagina*/
+footer{
+    padding: 40px 90px 40px 90px;
+}
+
+/*Altura de los contenedores del encabezado, el main y el pie de pagina*/
+.header_wrap, .main_wrap, .footer_wrap{
+    height:100%;
+}
+
+/*Altura del contenedor del logo del encabezado*/
+.header_up{
+    height:65%;
+}
+
+/*Dimensiones del logo*/
+.header_up img{
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+}
+
+/*Dimensiones del contenedor del nav*/
+.header_down{
+    height:35%;
+    padding-top: 30px;
+}
+
+/*distribucion de los elementos de la lista del nav*/
+.header_ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*Estilo de los elementos del nav*/
+.header_ul li a{
+    color:gray;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family:'Cafe';
+    letter-spacing:  5px;  
+}
+
+/*Coloreado de los elementos del nav al pasar el cursor por encima*/
+.header_ul li a:hover{
+    color:#E3007A;
+}
+
+/*Estilo del titulo de la pagina*/
+.main_wrap h1{
+    color:white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: 'Cafe';
+    margin-bottom:30px;
+}
+
+/*Estilo y dimensiones de las divisiones de las promociones*/
+.main_div_1, .main_div_2{
+    background-color:#F2F2F2;
+    height:12.5%;
+    margin-bottom: 50px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px 25px 25px 25px;
+}
+
+/*Estilo y proporcion del contenedor de la imagen*/
+.main_img{
+    background-color: #E3007A;
+    border-radius: 25px 25px 25px 25px;
+    width:30%;
+    padding:25px;
+}
+
+/*Estilo y proporcion del contenedor del texto*/
+.main_text{
+    background-color: #7fc44e;
+    border-radius: 25px 25px 25px 25px;
+    width:67%;
+    padding:30px;
+    padding-top:40px;
+}
+
+/*Estilo y proporcion del titulo de la promocion*/
+.main_text h2{
+    font-family: 'Cafe';
+    text-transform: uppercase;
+    letter-spacing:8px;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+/*Estilo y proporcion de la descripción de la promocion*/
+.main_text p{
+    font-family: 'Cafe';
+    letter-spacing:2px;
+    margin-bottom: 14px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/*Proporcion de la imagen*/
+.main_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px 25px 25px 25px;
+}
+
+/*Marco del pie de pagina*/
+.footer_wrap{
+    display:flex;
+    justify-content: space-between;
+}
+
+/*Contenedor de los logos del pie de pagina*/
+.footer_img{
+    width:10%;
+}
+
+/*Dimensiones de los logos del pie de pagina*/
+.footer_img img{
+    height: 100%;
+    width: 100%;
+}
+
+/*Proporciones de los contenedores del pie de pagina*/
+.footer_txt, .footer_social{
+    width:35%;
+}
+
+/*Estilo de los subtitulos del pie de pagina*/
+.footer_subtitle{
+    color:white;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Cafe';
+    letter-spacing: 4px;
+}
+
+/*Estilo de los subtextos del pie de pagina*/
+.footer_subtext{
+    color:white;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'Cafe';
+    letter-spacing: 4px;
+    padding-bottom: 2.5px;
+    padding-top: 2.5px;
+}
+
+/*Estilo de los logos de redes sociales*/
+.social{
+    color:white;
+    font-family: 'Social Symbol';
+    font-size: 40px;
+    padding: 20px 10px 0px 0px;
+}
+
+/*Cambio de colores de los logos de redes sociales al pasar el cursor por encima*/
+.social:hover{
+    color:#7fc44e;   
+}
+
+/*Ancho de la barra de scroll de la pagina*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/*Color de la barra de scroll*/
+::-webkit-scrollbar-thumb {
+    background: #E3007A;
+}
